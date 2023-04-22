@@ -1,31 +1,58 @@
 body {
-    font-family: "Lexend Deca";
-    background-color: rgb(142, 176, 248);
-    color: black;}
+  font-family: "Lexend Deca";
+  background-color: rgb(142, 176, 248);
+  color: black;
+}
 
-h1{text-align: center;
-    color: aliceblue;
+h1 {
+  text-align: center;
+  color: aliceblue;
 }
 h2 {
-    text-decoration-line: underline;
-    text-align: center;
-  }
-  img.lasagne {
-    border-radius: 50%;
-    width: 30rem;
+  text-decoration-line: underline;
+  text-align: center;
+}
+img.lasagne {
+  border-radius: 50%;
+  width: 30rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.ingredients {
+  border-radius: 3%;
+  border: 5px outset rgb(169, 119, 238);
+  background-color: rgb(166, 242, 194);
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 2rem;
+  display: block;
+  font-size: 20px;
+  font-family: "Lexend Deca";
+  color: black;
+}
+#homepagefood {
+  width: 100%;
+  background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+  height: 35rem;
+}
+
+@media screen and (min-width: 1200px) {
+  #homepagefood {width: 80%; 
     display: block;
     margin-left: auto;
     margin-right: auto;
+    background-color:rgb(142, 176, 248);
   }
-  .ingredients {
-    border-radius: 3%;
-    border: 5px outset rgb(169, 119, 238);
-    background-color: rgb(166, 242, 194);
-    margin-left: 20%;
-    margin-right: 20%;
-    padding: 2rem;
+
+}
+@media screen and (max-width: 400px) {
+  #homepagefood {width: 60%; 
+    height: 5rem;
     display: block;
-    font-size: 20px;
-    font-family: "Lexend Deca";
-    color: black
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(142, 176, 248);
   }
+
+}
