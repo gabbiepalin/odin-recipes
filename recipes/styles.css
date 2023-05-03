@@ -31,6 +31,9 @@ img.lasagne {
   font-family: "Lexend Deca";
   color: black;
 }
+.ingredients, h3, ul, li{
+  background-color: rgb(166, 242, 194);
+}
 #homepagefood {
   width: 100%;
   background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
@@ -38,21 +41,42 @@ img.lasagne {
 }
 
 @media screen and (min-width: 1200px) {
-  #homepagefood {width: 80%; 
+  #homepagefood {
+    width: 80%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color:rgb(142, 176, 248);
+    background-color: rgb(142, 176, 248);
   }
-
 }
 @media screen and (max-width: 400px) {
-  #homepagefood {width: 60%; 
+  #homepagefood {
+    width: 60%;
     height: 5rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    background-color:rgb(142, 176, 248);
+    background-color: rgb(142, 176, 248);
   }
+}
+* {
+  background-color: rgb(142, 176, 248);
+}
+.button {
+  background-color: #eb80f4; /* Green */
+  border: none;
+  color: white;
+  box-shadow: 0 6px #ea12d0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+.button:hover {background-color: #6c496e}
 
+.button:active {
+  background-color: #d6b7d9;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
