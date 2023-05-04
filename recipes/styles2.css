@@ -8,13 +8,10 @@ body {
     text-align: center;
     color: aliceblue;
   }
-  h2 {
-    text-decoration-line: underline;
-    text-align: center;
-  }
-.flex-container {
+ 
+/* .flex-container { */
     /* display: flex; */
-  }
+  /* } */
   
   /* this selector selects all divs inside of .flex-container */
   .flex-container div {
