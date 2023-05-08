@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Lexend Deca"
-      rel="stylesheet"
-    />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="namechange">Document</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body id="backgroundcolorchange">
-    <nav class="container">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Lexend Deca" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="namechange">Document</title>
+  <link rel="stylesheet" href="styles.css" />
+
+</head>
+
+<body id="backgroundcolorchange">
+  <nav class="container">
     <img src="../food.jpg" alt="image of food" class="food" id="homepagefood" />
     <h1>Gabbie's Recipes Home Page!</h1>
     <h2>
@@ -25,24 +25,34 @@
         <p><a href="lasagna.html">Traditional Italian Lasagne</a></p>
       </ul>
       <button onclick="myFunction()">Change Color</button>
-    </nav>
-    <script>
-      let colorChange = false;
-      function myFunction() {
-        if (colorChange === true) {
-          document.getElementById("backgroundcolorchange").style.backgroundColor = "lightblue";
-          console.log("hello world!"); 
-          document.title = "This is the new page title.";
-        }
-        else {
-          document.getElementById("backgroundcolorchange").style.backgroundColor = "lightgreen";
-          console.log("hello world false!");
-          document.title = "This is the old page title.";
-        }
-        colorChange = !colorChange;  
-        console.log("color change is : " + colorChange);      
-            }
-            
-      </script>
-  </body>
+  </nav>
+  <script>
+    let colorChange = false;
+    function myFunction() {
+      if (colorChange === true) {
+        document.getElementById("backgroundcolorchange").style.backgroundColor = "lightblue";
+        console.log("hello world!");
+        document.title = "This is the new page title.";
+      }
+      else {
+        document.getElementById("backgroundcolorchange").style.backgroundColor = "lightgreen";
+        console.log("hello world false!");
+        document.title = "This is the old page title.";
+      }
+      colorChange = !colorChange;
+      console.log("color change is : " + colorChange);
+    }
+  </script>
+  <script type="text/javascript">
+    var clicks = 0;
+
+    function onClick() {
+      clicks += 1;
+      document.getElementById("clicks").innerHTML = clicks;
+    };
+    </script>
+    <button type="button" onClick="onClick()">Hit me</button>
+<p>Clicks: <a id="clicks">0</a></p>
+</body>
+
 </html>
