@@ -95,3 +95,8 @@ li {
   display: block;
   font-size: 20px;
 }
+.container {
+  border: 5px solid lightblue rgb;
+  display: flex;
+  flex-direction: column;
+}
